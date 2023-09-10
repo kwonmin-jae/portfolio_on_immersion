@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  margin-top: 50px;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin-top: 15px;
+  /* margin: 10px; */
+  width: 35px;
+  height: 35px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); */
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:nth-of-type(1),
+.wrapper .icon:nth-of-type(2) {
+    margin-right: 15px;
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); */
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .html:hover,
+.wrapper .html:hover .tooltip,
+.wrapper .html:hover .tooltip::before {
+  background: #ff651f;
+  color: #ffffff;
+}
+
+.wrapper .css:hover,
+.wrapper .css:hover .tooltip,
+.wrapper .css:hover .tooltip::before {
+  background: #01ace4;
+  color: #ffffff;
+}
+
+.wrapper .js:hover,
+.wrapper .js:hover .tooltip,
+.wrapper .js:hover .tooltip::before {
+  background: #ffc736;
+  color: #ffffff;
+}
+/* 2번째 아이콘들 */
+.wrapper2 {
+    display: inline-flex;
+    list-style: none;
+    margin-top: 50px;
+  }
+  
+  .wrapper2 .icon {
+    position: relative;
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+    margin-top: 15px;
+    /* margin: 10px; */
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); */
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper2 .icon:nth-of-type(1) {
+      margin-right: 15px;
+  }
+  
+  .wrapper2 .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); */
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper2 .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper2 .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .wrapper2 .icon:hover span,
+  .wrapper2 .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wrapper2 .windows:hover,
+  .wrapper2 .windows:hover .tooltip,
+  .wrapper2 .windows:hover .tooltip::before {
+    background: #0178d6;
+    color: #ffffff;
+  }
+  
+  .wrapper2 .mac:hover,
+  .wrapper2 .mac:hover .tooltip,
+  .wrapper2 .mac:hover .tooltip::before {
+    background: black;
+    color: #ffffff;
+  }
+/* 3번째 아이콘들 */
+.wrapper3 {
+    width: 100%;
+    display: inline-flex;
+    list-style: none;
+    margin-top: 50px;
+
+    position: absolute;
+    justify-content: flex-end;
+  }
+  
+  .wrapper3 .icon {
+    position: relative;
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+    margin-top: 15px;
+    /* margin: 10px; */
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); */
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper3 .icon:nth-of-type(1) {
+    margin-right: 15px;
+  }
+  .wrapper3 .icon:nth-of-type(2) {
+    margin-right: 100px;
+  }
+  
+  .wrapper3 .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); */
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper3 .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper3 .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .wrapper3 .icon:hover span,
+  .wrapper3 .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wrapper3 .tablet:hover,
+  .wrapper3 .tablet:hover .tooltip,
+  .wrapper3 .tablet:hover .tooltip::before {
+    background: #019ad6;
+    color: #ffffff;
+  }
+  
+  .wrapper3 .email:hover,
+  .wrapper3 .email:hover .tooltip,
+  .wrapper3 .email:hover .tooltip::before {
+    background: rgb(0, 0, 0);
+    color: #ffffff;
+  }

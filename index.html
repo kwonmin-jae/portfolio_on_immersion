@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minjae Kwon's portfolio</title>
+    <link rel="stylesheet" href="./scroll.css">
+    <link rel="stylesheet" href="./plantoffice.css">
+    <link rel="stylesheet" href="./plant.css">
+    <link rel="stylesheet" href="./leaf.css">
+    <link rel="stylesheet" href="./snsicon.css">
+    <link rel="stylesheet" href="./scrollicon.css">
+    <link rel="stylesheet" href="./browser.css">
+    <link rel="stylesheet" href="./view.css">
+    <link rel="stylesheet" href="./animation.css">
+    <link rel="stylesheet" href="./percentage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="./animation.js" defer></script>
+    <script src="./browser.js" defer></script>
+    <script src="./percentage.js" defer></script>
+    <script src="https://kit.fontawesome.com/0b664668d9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrap">
+
+      <script language="JavaScript">  
+        expireDate = new Date  // 현재의 날짜 객체를 생성 
+        expireDate.setMonth(expireDate.getMonth()+3)  // 현재 월에 3개월을 더함. 쿠키의 유효기간 설정.(현재~3개월) 
+        hitCt = eval(cookieVal("pageHit"))  // 방문 카운트 변수이며 cookieVal 함수를 실행. 
+        hitCt++  // 방문 카운트 +1
+        document.cookie = "pageHit="+hitCt+";expires=" + expireDate.toGMTString() // 이곳에서 쿠키를 갱신.   
+        function cookieVal(cookieName) {  // cookieVal 함수를 선언함.   
+           thisCookie = document.cookie.split("; ")  // 쿠키의 문자열 구조가 '쿠키명=쿠키값; expires=유효기간' 이기 때문에 먼저 세미콜론(;)으로 나눔.(split) 
+           for (i=0; i<thisCookie.length; i++) { // ; 으로 나눈 만큼 반복문을 실행. 여기서는 2번을 반복함.   
+                if (cookieName == thisCookie[i].split("=")[0]) {  // 먼저 thisCookie[i].split("=")[0]은 '쿠키명=쿠키값' 구조에서 =으로 나눈 배열의 첫번째 값을 지칭함(쿠키명). 
+                     return thisCookie[i].split("=")[1]  // thisCookie[i].split("=")[1] 은 =으로 나눈 배열의 두번째 값.(쿠키값) 
+               }   
+         }   
+         return 0   
+        }   
+        </script>     
+        <h3 align=center class="view">  
+        <script language="javascript" type="text/javascript">  
+            document.write("조회수 " + hitCt)  
+        </script>  
+        </h3>
+
+        <ul class="wrapper3">
+            <li class="icon tablet">
+              <span class="tooltip">010.3362.2041</span>
+              <span><i class="fa-solid fa-tablet"></i></span>
+            </li>
+            <li class="icon email">
+              <span class="tooltip">10zesp04@naver.com</span>
+              <span><i class="fa-solid fa-envelope"></i></span>
+            </li>
+        </ul>
+
+        <!-- <div class="top__icons">
+            <img src="./free-icon-kakao-talk-2111683.png" alt="이미지">
+            <img src="./envelope-solid.svg" alt="이미지">
+            <img src="./tablet-solid.svg" alt="이미지">
+        </div>
+        <div class="top__texts">
+            <div>minzest</div>
+            <div>10zesp04@naver.com</div>
+            <div>010-3362-2041</div>
+        </div> -->
+        <main>
+            <div id="tab0" class="product__top">
+
+                <div class="modal show">
+                    <div class="content">
+                      <small>방문자님께서는 현재</small>
+                      <p></p>
+                      <p>(으)로 접속 중입니다.</p>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                </div>
+
+                <div class="product__top__txt">
+                    <span class="yellow underline">Web Publisher & Web Designer ㅣ 몰입(沒入)</span>                    
+                </div>
+                <!-- 그림 하단 배치 -->
+                <main class="workspace">
+                    <section class="workspace__table">
+                        <div class="workspace__cup"></div>
+                        
+                        <div class="workspace__computer">
+                            <div class="workspace__screen"></div>
+                        </div>
+                        
+                        <div class="workspace__planter">
+                            <div class="workspace__plant"></div>
+                        </div>
+                    </section>
+                </main>
+
+            </div>
+            <nav class="tab">
+                <ul>
+                    <li><a href="#tab0">SUBJECT</a></li>
+                    <li><a href="#tab1">KWON MIN JAE</a></li>
+                    <li><a href="#tab2-1">PORTFOLIO</a></li>
+                    <li><a href="#tab2">BERRYFARM</a></li>
+                    <li><a href="#tab3">엠제이문구</a></li>
+                    <li><a href="#tab3-2">lavender shop</a></li>
+                    <li><a href="#tab3-3">국가과학기술연구회</a></li>
+                    <li><a href="#tab3-4">이전 작업물</a></li>
+                    <li><a href="#tab4">THANK YOU</a></li>
+                </ul>
+            </nav>
+            <div id="tab1" class="tab__content">
+                <br><br><br>
+
+                <!-- 화분 그림 -->
+                <div class="stack">
+                  <div class="plant-1">
+                    <div class="stem">
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                    </div>
+                    <div class="stem">
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                    </div>
+                    <div class="stem">
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                    </div>
+                    <div class="stem">
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                    </div>
+                    <div class="stem">
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                    </div>
+                    <div class="stem">
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                    </div>
+                  </div>
+                  <div class="pot"></div>
+                  <div class="books">
+                    <div class="book"></div>
+                    <div class="book"></div>
+                    <div class="book"></div>
+                    <div class="book"></div>
+                    <div class="book"></div>
+                    <div class="book"></div>
+                  </div>
+                </div>
+                <div class="stack">
+                  <div class="stand">
+                    <div class="pot"></div>
+                    <div class="plant-2"></div>
+                    <div class="pot"></div>
+                    <div class="plant-3">
+                      <div class="stem"></div>
+                      <div class="stem"></div>
+                      <div class="stem"></div>
+                      <div class="stem"></div>
+                      <div class="stem"></div>
+                      <div class="stem"></div>
+                      <div class="stem"></div>
+                      <div class="stem"></div>
+                      <div class="stem"></div>
+                      <div class="stem"></div>
+                      <div class="stem"></div>
+                      <div class="stem"></div>
+                      <div class="stem"></div>
+                      <div class="stem"></div>
+                    </div>
+                    <div class="pot"></div>
+                    <div class="plant-4">
+                      <div class="leaf-2"></div>
+                      <div class="leaf-2"></div>
+                      <div class="leaf-2"></div>
+                      <div class="leaf-2"></div>
+                      <div class="leaf-2"></div>
+                      <div class="leaf-2"></div>
+                      <div class="leaf-2"></div>
+                      <div class="leaf-2"></div>
+                      <div class="leaf-2"></div>
+                      <div class="flower"></div>
+                      <div class="flower"></div>
+                      <div class="flower"></div>
+                    </div>
+                  </div>
+                </div>
+                <br><br><br><br>
+                <div class="txt__div">
+                <div>
+                <br><br>
+                1986. 8. 11 권민재<br><br>
+
+                · 학력<br>
+                2008. 2 부산 경남정보대학 디지털디자인계열 시각디자인과 졸업<br><br>
+
+                · 자격증<br>
+                워드프로세서 2급<br>
+                워드프로세서 3급<br>
+                정보처리기능사<br>
+                정보기기운용기능사<br>
+                인터넷정보검색사<br>
+                디지털영상편집 1급<br>
+                운전면허 2종 보통<br><br>
+                </div>
+                <div>
+                <br><br><br><br>· TOOL<br>
+                포토샵 / 일러스트레이터 / 피그마 / vs코드 / 프리미어 프로 / 애프터이펙트<br>
+
+                <ul class="wrapper">
+                    <li class="icon html">
+                      <span class="tooltip">HTML</span>
+                      <span><i class="fa-brands fa-html5"></i></span>
+                    </li>
+                    <li class="icon css">
+                      <span class="tooltip">CSS</span>
+                      <span><i class="fa-brands fa-css3"></i></span>
+                    </li>
+                    <li class="icon js">
+                      <span class="tooltip">JAVASCRIPT</span>
+                      <span><i class="fa-brands fa-js"></i></span>
+                    </li>
+                </ul><br>
+
+                <ul class="wrapper2">
+                    <li class="icon windows">
+                      <span class="tooltip">WINDOWS</span>
+                      <span><i class="fa-brands fa-windows"></i></span>
+                    </li>
+                    <li class="icon mac">
+                      <span class="tooltip">MAC</span>
+                      <span><i class="fa-brands fa-apple"></i></span>
+                    </li>
+                </ul>
+
+                </div>
+                </div>
+            </div>
+            <div id="tab1" class="tab__content">
+                <br><br><br>
+
+                <!-- 화분 그림 -->
+                <div class="stack">
+                  <div class="plant-1">
+                    <div class="stem">
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                    </div>
+                    <div class="stem">
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                    </div>
+                    <div class="stem">
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                    </div>
+                    <div class="stem">
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                    </div>
+                    <div class="stem">
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                    </div>
+                    <div class="stem">
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                      <div class="leaf"></div>
+                    </div>
+                  </div>
+                  <div class="pot"></div>
+                  <div class="books">
+                    <div class="book"></div>
+                    <div class="book"></div>
+                    <div class="book"></div>
+                    <div class="book"></div>
+                    <div class="book"></div>
+                    <div class="book"></div>
+                  </div>
+                </div>
+                <div class="stack">
+                  <div class="stand">
+                    <div class="pot"></div>
+                    <div class="plant-2"></div>
+                    <div class="pot"></div>
+                    <div class="plant-3">
+                      <div class="stem"></div>
+                      <div class="stem"></div>
+                      <div class="stem"></div>
+                      <div class="stem"></div>
+                      <div class="stem"></div>
+                      <div class="stem"></div>
+                      <div class="stem"></div>
+                      <div class="stem"></div>
+                      <div class="stem"></div>
+                      <div class="stem"></div>
+                      <div class="stem"></div>
+                      <div class="stem"></div>
+                      <div class="stem"></div>
+                      <div class="stem"></div>
+                    </div>
+                    <div class="pot"></div>
+                    <div class="plant-4">
+                      <div class="leaf-2"></div>
+                      <div class="leaf-2"></div>
+                      <div class="leaf-2"></div>
+                      <div class="leaf-2"></div>
+                      <div class="leaf-2"></div>
+                      <div class="leaf-2"></div>
+                      <div class="leaf-2"></div>
+                      <div class="leaf-2"></div>
+                      <div class="leaf-2"></div>
+                      <div class="flower"></div>
+                      <div class="flower"></div>
+                      <div class="flower"></div>
+                    </div>
+                  </div>
+                </div>
+                <br><br><br><br>
+                <div class="txt__div">
+                <div>
+                <br><br>
+                · 교육 수료<br>
+                2021.01 - 2021.03<br>
+                영상제작&편집 디자인 입문과정(프리미어, 에프터이펙트,시네마4D)<br>
+                (교육 이수 시간:300시간)<br>
+                그린컴퓨터아트학원 대전캠퍼스<br><br>
+
+                2021.02 - 2021.04<br>
+                [HD]Adobe Premiere Pro CC 2018, 2019 영상편집의 입문<br>
+                Part.1, Part.2, Part.3<br>
+                (교육 이수 시간:64시간)<br>
+                꿈날개 / 온라인<br><br>
+
+                2022.02 - 2022.12<br>
+                한 방에 끝내는 프리미어/애펙 영상편집 100강사전<br>
+                (교육 이수 시간:62시간 33분)<br>
+                콜로소 / 온라인<br><br>
+                </div>
+                <div>
+                <br>
+                             
+                <br><br>
+                2023.04 - 2023.09<br>
+                (산대특)뷰(Vue.js)를 활용한 프로그레시브 웹 앱(PWA) 개발자 양성과정<br>
+                (교육 이수 시간:856시간)<br>
+                이지디자인컴퓨터학원<br><br>
+
+                · 경력<br>
+                2010.2 - 2010.7 부산 대한예수교장로회 동래중앙교회 / 사무간사<br>
+                2016.9 - 2019.9 세종 공방 휴(休) / 사원<br><br>
+                </div>
+                </div>
+            </div>
+            <div id="tab2-1" class="tab__content">
+                <ul class="card__animation">
+                    <li><a href="https://kwonmin-jae.github.io/berryfarm/" target="_blank">BERRYFARM</a></li>
+                    <li><a href="https://kwonmin-jae.github.io/mjstationery/" target="_blank">엠제이문구</a></li>
+                    <li><a href="https://kwonmin-jae.github.io/lavendershop/" target="_blank">lavender shop</a></li>
+                    <li><a href="https://kwonmin-jae.github.io/nst/" target="_blank">국가과학기술연구회</a></li>
+                    <li><a href="#tab3-4">이전 작업물</a></li>
+                </ul>
+            </div>
+            <div id="tab2" class="tab__content">
+                <br><br><br>
+                <div class="shoppingmall__div__1">
+                <div class="subject__div"><div>베리팜</div>온라인 쇼핑몰 제작 의도 (기여도 - 100%)</div>
+                <div class="subject__txtdiv">
+                <div class="subject__txt1">
+
+                지금 현재에는 부모님께서 산딸기를 오프라인에서만 거래가 가능하다는<br>
+                이 점에 대해 불편함이 있다는 것을 알고<br>
+                제가 어떻게 하면 이 점에 대해서 개선할 수 있을지 고민을 했습니다.<br>
+                기존의 오프라인에서만 거래하던 방식에서 더 나아가서<br>
+                편의성을 도모하고자 오프라인에서 뿐만이 아니라 온라인에서도 거래가 가능하도록<br>
+                온라인 쇼핑몰을 제작하기로 하였습니다.<br>
+                온라인 쇼핑몰을 제작하기에 앞서 러브베리라는 템플릿을 클론하기로 결정하였습니다.<br>
+                디자인이나 메인 컬러의 방향성이 제작하고자 하는 온라인 쇼핑몰과 맞다고 판단했기 때문입니다.<br>
+                원본 디자인에서 계속해서 디자인을 보완해 나갔습니다.<br>
+                똑같이 만드는 것보다 더 좋은 디자인을 위해 보완해 나가는 게 좋다고 판단했습니다.<br>
+                단독 광고 영역에서 이미지나 텍스트가 복잡해 보인다는 단점이 있어서<br>
+                광고가 더 강조되게끔 간단 명료하게 디자인을 개선했습니다.<br>
+                그리고 최상단 부분에 팝업 디자인을 추가하여 원하는 정보를 얻을 수 있도록 하였습니다.<br>
+                또한 마우스를 호버했을 때 왼쪽에서 나오는 사이드바를 추가하여 부메뉴로 갈 수 있도록 하고<br>
+                반응형 디자인으로 제작하여 사용성을 개선하였습니다.<br>
+                이 쇼핑몰은 2024년 1월 부터 부모님께서 운영 및 관리를 하실 예정입니다.
+                </div>
+                </div>
+                </div>
+
+                <br>
+                <div class="color__div">
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="color__div__text">
+                  <div>#ff6464</div>
+                  <div>white</div>
+                </div>
+
+                <br>
+                <button class="button" onclick="window.open('https://kwonmin-jae.github.io/berryfarm/')">Web site</button>
+                <button class="button" onclick="window.open('./berryfarm_fullimage.html')">디자인 컨셉서</button>
+                <button class="button" onclick="window.open('./berryfarm_fullimage2.html')">디자인 컨셉서 결과</button>
+                <button class="button" onclick="window.open('./berryfarm_image.html')">풀스크린 이미지</button>
+            </div>
+            <div id="tab3" class="tab__content">
+                <br><br><br>
+                <div class="shoppingmall__div__2">
+                  <div class="subject__div2"><div>엠제이문구</div>온라인 쇼핑몰 제작 의도 (기여도 - 100%)</div>
+                  <div class="subject__txtdiv">
+                  <div class="subject__txt1">
+                  엠제이문구는 다양한 문구류를 판매하는 온라인 쇼핑몰입니다.<br>
+                  클론이나 리디자인 또는 리뉴얼이 아닌 처음부터 기획 및 제작을 하였습니다.<br>
+                  이 쇼핑몰은 실제로 운영할 쇼핑몰이 아니라<br>
+                  이러한 쇼핑몰이 있다는 가상 하에 제작을 하게 되었습니다.<br>
+                  화면을 스크롤 시에 따라다니는 퀵 메뉴를 추가하여 사용성을 높였습니다.<br>
+                  여기에 토글 버튼을 추가하여 토글 버튼을 클릭 시에 다크 모드로 바뀌는<br>
+                  디스플레이 기능을 추가하였습니다.<br>
+                  또한 드래그 및 팝업을 끌 수 있는 기능을 추가한 팝업창 및<br>
+                  마우스를 호버 시에 왼쪽에서 나타나는 사이드 메뉴를 추가하여<br>
+                  부 메뉴로 이동할 수 있는 기능을 추가하였습니다.<br>
+                  그리고 반응형 디자인으로 제작하여 사용성 및 편의성을 높였습니다.
+                </div>
+                </div>
+                </div>
+
+                <br>
+                <div class="color__div2">
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="color__div__text">
+                  <div>lightskyblue</div>
+                  <div>white</div>
+                </div>
+
+                <br>
+                <button class="button" onclick="window.open('https://kwonmin-jae.github.io/mjstationery/')">Web site</button>
+                <button class="button" onclick="window.open('./mjstationery_image.html')">풀스크린 이미지</button>
+            </div>
+            <div id="tab3-2" class="tab__content">
+                <br><br><br>
+                <div class="shoppingmall__div__2">
+                  <div class="subject__div3"><div>라벤더샵</div>온라인 쇼핑몰 제작 의도 (기여도 - 100%)</div>
+                  <div class="subject__txtdiv">
+                  <div class="subject__txt1">
+                  라벤더샵은 소품을 판매하는 온라인 쇼핑몰입니다.<br>
+                  이 쇼핑몰 또한 가상으로 제작을 하였습니다.<br>
+                  처음부터 기획 및 제작을 하게 되었습니다.<br>
+                  최상단의 광고 영역을 끌 수 있는 기능을 추가하였고<br>
+                  로고의 왼쪽에 토글 버튼을 추가하여<br>
+                  다크 모드로도 이용이 가능하도록 하는 기능을 추가하였습니다.<br>
+                  그리고 상품 영역에서 상품 이미지의 왼쪽 상단에<br>
+                  NEW라는 상품에 대한 간략한 설명이 나오도록 하였고<br>
+                  호버 시에 상품명 및 가격을 볼 수 있게 하여 사용성을 높였습니다.<br>
+                  그리고 반응형 디자인으로 제작하여 편의성 또한 높였습니다.
+                </div>
+                </div>
+                </div>
+
+                <br>
+                <div class="color__div3">
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="color__div__text">
+                  <div>#444b6e</div>
+                  <div>white</div>
+                </div>
+
+                <br>
+                <button class="button" onclick="window.open('https://kwonmin-jae.github.io/lavendershop/')">Web site</button>
+                <button class="button" onclick="window.open('./lavendershop_image.html')">풀스크린 이미지</button>
+            </div>
+            <div id="tab3-3" class="tab__content">
+                <br><br><br>
+                <div class="shoppingmall__div__2">
+                  <div class="subject__div4"><div>국가과학기술연구회</div>공공기관 웹 사이트 제작 의도 (기여도 - 100%)</div>
+                  <div class="subject__txtdiv">
+                  <div class="subject__txt1">
+                국가과학기술연구회라는 세종의 공공기관 웹 사이트를<br>
+                클론 방식으로 디자인을 하는데 기존의 웹에서 큰 틀은 유지하되,<br>
+                디자인을 약간 변경하여 제작하였습니다.<br>
+                이 것 또한 원본 웹 사이트와 동일하게 반응형으로 제작하여 사용성을 개선하였습니다.
+                </div>
+                </div>
+                </div>
+
+                <br>
+                <div class="color__div4">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="color__div__text">
+                  <div>#089bd9</div>
+                  <div>#e72f78</div>
+                  <div>white</div>
+                </div>
+
+                <br>
+                <button class="button" onclick="window.open('https://kwonmin-jae.github.io/nst/')">Web site</button>
+                <button class="button" onclick="window.open('./nst_image.html')">풀스크린 이미지</button>
+            </div>
+            <div id="tab3-4" class="tab__content">
+                <br><br><br>
+                <div class="shoppingmall__div__2">
+                  <div class="subject__div5"><div>시각편집디자인</div></div>
+                  <div class="subject__txtdiv">
+                  <div class="subject__txt1">
+                  첫번째로는 부산에 조방낙지라는 음식점에 대한 시각편집디자인을 하였습니다.<br>
+                  이 것은 2007년에 경남정보대학에서 졸업작품전에 제출했던 졸업 작품입니다.<br>
+                  기존의 디자인에서 리뉴얼하여 전체적으로 디자인을 처음부터 다시 작업하고 디자인 면에서 개선하였습니다.<br>
+                  두번째로는 부산에 스펀지라는 종합쇼핑센터에 대한 시각편집디자인을 하였습니다.<br>
+                  기존의 디자인에서 리디자인하여 디자인 면에서 개선하였습니다.
+                </div>
+                </div>
+                </div>
+
+                <!-- <br>
+                <div class="color__div4">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div> -->
+
+                <br>
+                <button class="button" onclick="window.open('https://kwonmin-jae.github.io/visual_design/')">Web site</button>
+                <div class="shoppingmall__div__2">
+                  <div class="subject__div6"><div>영상편집디자인</div></div>
+                  <div class="subject__txtdiv">
+                  <div class="subject__txt1">
+                  이 것은 2021년에 그린컴퓨터아트학원 대전캠퍼스에서 영상제작&편집 디자인 입문과정을 배우고<br>
+                  수료하기 전에 제작했던 영상편집디자인 작업물입니다.<br>
+                  CU 편의점의 끼리택배 영상을 클론하여 씨스페이스 편의점의 택배 영상을 제작하였습니다.<br>
+                  씨스페이스의 편의점 택배가 지금 현재에는 존재하지 않지만 있다는 가상 하에 제작하게 되었습니다.<br>
+                  씨스페이스의 택배가 CU의 끼리택배와 비교했을 때 더 저렴하고 편리하다는 점을 알리는 데에 초점을 두었습니다.<br> 
+                  애프터이펙트를 이용하여 42초의 영상을 제작하였습니다.
+                </div>
+                </div>
+                </div>
+                <br>
+                <button class="button" onclick="window.open('https://kwonmin-jae.github.io/cspace/')">Web site</button>
+            </div>
+            <div id="tab4" class="tab__content">
+                <br><br><br>
+                <div class="shoppingmall__div__2">
+
+                  <div class="plant">
+                    <div class="plant__leaves"></div>
+                  </div>
+
+                <br><h1>THANK YOU</h1>
+                제 포트폴리오를 봐주셔서 감사합니다.
+                </div>
+
+                <div class="list-container">
+                    <button class="more-button" aria-label="Menu Button">
+                      <div class="menu-icon-wrapper">
+                        <div class="menu-icon-line half first"></div>
+                        <div class="menu-icon-line"></div>
+                        <div class="menu-icon-line half last"></div>
+                      </div>
+                    </button>
+                    <ul class="more-button-list">
+                      <li class="more-button-list-item">
+                        <img src="./github.svg" alt="이미지">
+                        <a href="https://github.com/kwonmin-jae" target="_blank"><span>github</span></a>
+                      </li>
+                      <li class="more-button-list-item">            
+                        <img src="./facebook.svg" alt="이미지">
+                        <a href="https://www.facebook.com/zest.null.5" target="_blank"><span>facebook</span></a>
+                      </li>
+                      <li class="more-button-list-item">
+                        <img src="./twitter.svg" alt="이미지">
+                        <a href="http://twitter.com/zest2046" target="_blank"><span>twitter</span></a>
+                      </li>
+                      <li class="more-button-list-item">
+                        <img src="./instagram.svg" alt="이미지">
+                        <a href="https://www.instagram.com/nonamenonickname_/" target="_blank"><span>instagram</span></a>
+                      </li>
+                    </d>
+                  </div>
+
+            </div>
+        </main>
+    </div>
+</body>
+</html>

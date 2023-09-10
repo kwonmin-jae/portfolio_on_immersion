@@ -1,0 +1,534 @@
+/*** 내용 내부 상단 여백 91px로 하기 ***/
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+a {
+    color: black;
+}
+.wrap {
+    /* width: 1200px; */
+    width: 100%;
+    margin: 0 auto;
+}
+.product__top {
+    height: 100vh;
+    text-align: center;
+    line-height: 100vh;
+    font-size: 50px;
+    background-color: lightblue;
+}
+.tab {
+    position: sticky;
+    top: 0;
+    border-top: 3px solid black;
+    background-color: white;
+
+    font-size: 13px;
+    z-index: 10000;
+}
+.tab ul {
+    display: flex;
+}
+.tab li {
+    flex: 1;
+}
+.tab a {
+    border-bottom: 3px solid black;
+    line-height: 60px;
+
+    display: block;
+    /* border: 1px solid lightgray; */
+    /* border-top: none; */
+    /* line-height: 40px; */
+    text-align: center;
+}
+.tab__content {
+    /* padding-top: 91px; */
+    /* padding-left: 91px; */
+    padding: 91px;
+    font-size: 20px;
+
+    height: 100vh;
+}
+.tab__content:nth-of-type(1) {
+    background-color: lightblue;
+}
+.tab__content:nth-of-type(2) {
+    background-color: lightblue;
+
+    background-image: linear-gradient(to right, white 33%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom; 
+    background-size: 15px 2px; /*점선 간격 수정*/
+    background-repeat: repeat-x;
+}
+.tab__content:nth-of-type(3) {
+    background-color: lightblue;
+}
+.tab__content:nth-of-type(4) {
+    background-color: lightblue;
+    padding: 0;
+}
+.tab__content:nth-of-type(5) {
+    background-color: lightblue;
+}
+.tab__content:nth-of-type(6) {
+    background-color: lightblue;
+}
+.tab__content:nth-of-type(7) {
+    background-color: lightblue;
+}
+.tab__content:nth-of-type(8) {
+    background-color: lightblue;
+}
+.tab__content:nth-of-type(9) {
+    background-color: lightblue;
+}
+.tab__content:nth-of-type(10) {
+    background-color: lightblue;
+}
+
+.tab ul li:hover {
+    background-color: lightgray;
+}
+button {
+    background-color: white;
+    padding: 10px;
+    margin: 4px;
+    cursor: pointer;
+}
+.txt__div {
+    display: flex;
+    flex-direction: row;
+    /* gap: 30px; */
+}
+.txt__div div {
+    /* outline: 1px solid red; */
+    flex: 1;
+
+    font-size: 18px;
+}
+
+/* 영역 구분선 추가하기 - 보류 */
+/* #tab1,
+#tab2,
+#tab3,
+#tab3-2 {
+    border-bottom: 1px solid white;
+} */
+
+/* 컬러 div */
+.color__div {
+    display: flex;
+    gap: 15px;
+    margin: 6px;
+}
+.color__div div {
+    outline: 2px solid black;
+    width: 25px;
+    height: 25px;
+    padding: 20px;
+}
+.color__div div:nth-of-type(1) {
+    background-color: #ff6464;
+}
+.color__div div:nth-of-type(2) {
+    background-color: white;
+}
+
+.color__div2 {
+    display: flex;
+    gap: 15px;
+    margin: 6px;
+}
+.color__div2 div {
+    outline: 2px solid black;
+    width: 25px;
+    height: 25px;
+    padding: 20px;
+}
+.color__div2 div:nth-of-type(1) {
+    background-color: lightskyblue;
+}
+.color__div2 div:nth-of-type(2) {
+    background-color: white;
+}
+
+.color__div3 {
+    display: flex;
+    gap: 15px;
+    margin: 6px;
+}
+.color__div3 div {
+    outline: 2px solid black;
+    width: 25px;
+    height: 25px;
+    padding: 20px;
+}
+.color__div3 div:nth-of-type(1) {
+    background-color: #444B6E;
+}
+.color__div3 div:nth-of-type(2) {
+    background-color: white;
+}
+
+.color__div4 {
+    display: flex;
+    gap: 15px;
+    margin: 6px;
+}
+.color__div4 div {
+    outline: 2px solid black;
+    width: 25px;
+    height: 25px;
+    padding: 20px;
+}
+.color__div4 div:nth-of-type(1) {
+    background-color: #089bd9;
+}
+.color__div4 div:nth-of-type(2) {
+    background-color: #e72f78;
+}
+.color__div4 div:nth-of-type(3) {
+    background-color: white;
+}
+
+.color__div__text {
+    display: flex;
+    gap: 15px;
+    color: black;
+    font-size: 10px;
+    margin: 6px;
+}
+.color__div__text div {
+    /* outline: 1px solid red; */
+    width: 40px;
+    text-align: center;
+}
+
+/* .tab ul li:nth-of-type(1),
+.tab ul li:nth-of-type(2),
+.tab ul li:nth-of-type(3),
+.tab ul li:nth-of-type(4) {
+    border-right: 1px solid black;
+} */
+
+.subject__div {
+    display: flex;
+    gap: 5px;
+    font-weight: bold;
+    align-items: center;
+    padding: 4px;
+}
+.subject__div div {
+    color: #ff6464;
+    background-color: white;
+    padding: 4px;
+
+    border-radius: 4px;
+}
+
+.subject__div2 {
+    display: flex;
+    gap: 5px;
+    font-weight: bold;
+    align-items: center;
+    padding: 4px;
+}
+.subject__div2 div {
+    color: lightskyblue;
+    background-color: white;
+    padding: 4px;
+
+    border-radius: 4px;
+}
+
+.subject__div3 {
+    display: flex;
+    gap: 5px;
+    font-weight: bold;
+    align-items: center;
+    padding: 4px;
+}
+.subject__div3 div {
+    color: #444b6e;
+    background-color: white;
+    padding: 4px;
+
+    border-radius: 4px;
+}
+
+.subject__div4 {
+    display: flex;
+    gap: 5px;
+    font-weight: bold;
+    align-items: center;
+    padding: 4px;
+}
+.subject__div4 div {
+    color: #089bd9;
+    background-color: white;
+    padding: 4px;
+
+    border-radius: 4px;
+}
+
+.subject__div5 {
+    display: flex;
+    gap: 5px;
+    font-weight: bold;
+    align-items: center;
+    padding: 4px;
+}
+.subject__div5 div {
+    color: black;
+    background-color: white;
+    padding: 4px;
+
+    border-radius: 4px;
+}
+
+.subject__div6 {
+    display: flex;
+    gap: 5px;
+    font-weight: bold;
+    align-items: center;
+    padding: 4px;
+    margin-top: 50px;
+}
+.subject__div6 div {
+    color: black;
+    background-color: white;
+    padding: 4px;
+
+    border-radius: 4px;
+}
+
+.subject__txt1 {
+    padding: 4px;
+}
+
+/* 포트폴리오 영역 추가 */
+.card__animation {
+    display: flex;
+}
+.card__animation li {
+    flex: 1;
+    height: 100vh;
+    line-height: 100vh;
+    text-align: center;
+    font-size: 40px;
+    transition: all 0.5s;
+}
+.card__animation li a {
+    color: white;
+}
+/* 영역 전체에 링크를 걸어주기 */
+.card__animation li a {
+    display: block;
+}
+.card__animation li:hover {
+    flex: 3;
+    font-size: 60px;
+    color: white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+}
+.card__animation li:not(:hover) {
+    flex: 2;
+}
+/* .card__animation li:nth-child(1) {
+    background-image: url(001.jpg); no-repeat center / cover;
+} */
+.card__animation li:nth-child(1) {
+    background-color: #ff6464;
+}
+.card__animation li:nth-child(2) {
+    background-color: lightskyblue;
+}
+.card__animation li:nth-child(3) {
+    background-color: #444B6E;
+}
+.card__animation li:nth-child(4) {
+    background-color: #089bd9;
+}
+.card__animation li:nth-child(5) {
+    background: linear-gradient(red, orange, yellow, green, blue, darkblue, darkviolet);
+}
+/* .portfolio__image {
+    width: 100%;
+} */
+
+/* 버튼 디자인 */
+:root {
+    --dark: hsl(199, 33%, 15%);
+  }
+  
+  body {
+    /* display: grid;
+    place-items: center;
+    min-height: 100vh;
+    margin: 0; */
+    /* background-color: var(--dark); */
+  }
+  
+  .button {
+    --bouncing-offset: 0.45em;
+    --bg: 178, 60%, 48%;
+  
+    background-color: hsl(var(--bg));
+    /* color: var(--dark); */
+  
+    border: 0;
+    border-radius: 0.5em;
+    padding: 1em;
+  
+    /* font-size: 2rem; */
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1;
+  
+    cursor: pointer;
+    box-shadow: 0 var(--bouncing-offset) 0 0 hsl(var(--bg), 0.5);
+  }
+  
+  .button:active,
+  .button:focus-visible {
+    transform: translateY(var(--bouncing-offset));
+    box-shadow: none;
+  }
+
+/* .product__top__txt {
+    font-size: 25px;
+}
+.product__top__txt span {
+    border: 2px solid white;
+
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+
+    cursor: pointer;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-repeat: no-repeat;
+    transition: background-size .9s cubic-bezier(0.50, 0.03, 0.45, 0.84);
+} */
+/* .left {
+    background-image: linear-gradient(90deg, #000 0%, #000 50%, transparent 50.1%);
+    background-size: 0% 100%;
+  }
+ 
+.left:hover {
+    background-size: 200% 100%;
+  } */
+
+/* 추가해서 만들어보는것 */
+.underline {
+    background-image: linear-gradient(transparent calc(100% - 3px), #000 3px);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 0.8s;
+    color: #000;
+    cursor: pointer;
+
+    font-size: 25px;
+  }
+  .underline.yellow {
+    background-image: linear-gradient(transparent 60%, #F8CD07 40%);
+  }
+  .underline:hover {
+    background-size: 100% 100%;
+  }
+
+.top__icons {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+.top__icons img {
+    width: 50px;
+    height: 50px;
+}
+.top__icons img:nth-of-type(1) {
+    margin-right: 150px;
+}
+.top__icons img:nth-of-type(2) {
+    margin-right: 100px;
+}
+
+.top__texts div:nth-of-type(1) {
+    background-image: linear-gradient(transparent calc(100% - 3px), #000 3px);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 0.8s;
+    color: #000;
+    cursor: pointer;
+
+    font-size: 16px;
+  }
+  .top__texts div:nth-of-type(1) {
+    background-image: linear-gradient(transparent 70%, #F8CD07 30%);
+  }
+  .top__texts div:nth-of-type(1):hover {
+    background-size: 100% 100%;
+  }
+
+  .top__texts div:nth-of-type(2) {
+    background-image: linear-gradient(transparent calc(100% - 3px), #000 3px);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 0.8s;
+    color: #000;
+    cursor: pointer;
+
+    font-size: 16px;
+  }
+  .top__texts div:nth-of-type(2) {
+    background-image: linear-gradient(transparent 70%, #F8CD07 30%);
+  }
+  .top__texts div:nth-of-type(2):hover {
+    background-size: 100% 100%;
+  }
+
+  .top__texts div:nth-of-type(3) {
+    background-image: linear-gradient(transparent calc(100% - 3px), #000 3px);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 0.8s;
+    color: #000;
+    cursor: pointer;
+
+    font-size: 16px;
+  }
+  .top__texts div:nth-of-type(3) {
+    background-image: linear-gradient(transparent 70%, #F8CD07 30%);
+  }
+  .top__texts div:nth-of-type(3):hover {
+    background-size: 100% 100%;
+  }
+
+.top__texts {
+    position: absolute;
+    top: 110px;
+    right: 50px;
+
+    display: flex;
+}
+.top__texts img {
+    width: 50px;
+    height: 50px;
+}
+.top__texts div:nth-of-type(1),
+.top__texts div:nth-of-type(2) {
+    margin-right: 43px;
+}

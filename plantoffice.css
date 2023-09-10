@@ -1,0 +1,186 @@
+.workspace {
+    /* width: 100vw; */
+    /* height: 100vh; */
+    /* background-color: #F6EEE8; */
+    position: relative;
+  }
+  .workspace__table {
+    width: 34rem;
+    height: 2rem;
+    background-color: white;
+    border-radius: 0.3rem 0.3rem 0 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .workspace__cup, .workspace__planter, .workspace__computer {
+    position: absolute;
+    bottom: 2rem;
+  }
+  .workspace__cup {
+    width: 3.5rem;
+    height: 2.5rem;
+    background: #F28B74;
+    border-radius: 0.5rem 0.5rem 2rem 2rem;
+    left: 2rem;
+  }
+  .workspace__cup:after {
+    content: "";
+    height: 0.6rem;
+    width: 0.6rem;
+    border-radius: 100%;
+    border: 0.4rem solid #F28B74;
+    position: absolute;
+    top: 0.2rem;
+    left: 2.9rem;
+  }
+  .workspace__planter {
+    width: 5rem;
+    height: 4rem;
+    right: 2rem;
+  }
+  .workspace__planter::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem 0.5rem 0.2rem 0.2rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #506075;
+  }
+  .workspace__plant {
+    width: 40%;
+    padding-top: 100%;
+    border-radius: 100%;
+    background-color: #6BAA75;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+  }
+  .workspace__plant::after, .workspace__plant::before {
+    content: "";
+    position: absolute;
+    border-radius: 100%;
+  }
+  .workspace__plant::before {
+    width: 100%;
+    height: 100%;
+    background-color: #78BF84;
+    top: 0;
+    left: -40%;
+    transform: rotate(-40deg);
+    -webkit-animation: workspace-plant-left 3s ease infinite;
+            animation: workspace-plant-left 3s ease infinite;
+  }
+  .workspace__plant::after {
+    width: 100%;
+    height: 100%;
+    background-color: #82CE8E;
+    top: 0;
+    left: 40%;
+    transform: rotate(40deg);
+    -webkit-animation: workspace-plant-right 3s ease infinite;
+            animation: workspace-plant-right 3s ease infinite;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .workspace__computer {
+    width: 17rem;
+    border-radius: 0.3rem;
+    height: 11rem;
+    background-color: white;
+    bottom: 3.5rem;
+    left: 48%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .workspace__computer::after, .workspace__computer::before {
+    content: "";
+    position: absolute;
+  }
+  .workspace__computer::after {
+    width: 10%;
+    height: 1.5rem;
+    bottom: -1.5rem;
+    background-color: #cacaca;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .workspace__computer::before {
+    width: 50%;
+    height: 0.5rem;
+    border-radius: 0.2rem 0.2rem 0 0;
+    bottom: -1.5rem;
+    background-color: #cacaca;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .workspace__screen {
+    width: 90%;
+    height: 85%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 0.1rem;
+    position: relative;
+  }
+  .workspace__screen::after {
+    content: "";
+    position: absolute;
+    bottom: -0.6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0.4rem;
+    height: 0.4rem;
+    background-color: #cacaca;
+    border-radius: 100%;
+  }
+  
+  @-webkit-keyframes workspace-plant-right {
+    0% {
+      transform: rotate(40deg);
+    }
+    50% {
+      transform: rotate(50deg);
+    }
+    100% {
+      transform: rotate(40deg);
+    }
+  }
+  
+  @keyframes workspace-plant-right {
+    0% {
+      transform: rotate(40deg);
+    }
+    50% {
+      transform: rotate(50deg);
+    }
+    100% {
+      transform: rotate(40deg);
+    }
+  }
+  @-webkit-keyframes workspace-plant-left {
+    0% {
+      transform: rotate(-40deg);
+    }
+    50% {
+      transform: rotate(-50deg);
+    }
+    100% {
+      transform: rotate(-40deg);
+    }
+  }
+  @keyframes workspace-plant-left {
+    0% {
+      transform: rotate(-40deg);
+    }
+    50% {
+      transform: rotate(-50deg);
+    }
+    100% {
+      transform: rotate(-40deg);
+    }
+  }
